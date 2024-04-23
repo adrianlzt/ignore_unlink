@@ -1,0 +1,13 @@
+[package]
+name = "ignore_unlink"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.37.0", features = ["full", "tracing"] }
+reverie = { git = "https://github.com/facebookexperimental/reverie.git", rev = "d296065b477378cf17d503f1c5430ce235122f30" }
+reverie-ptrace = { git = "https://github.com/facebookexperimental/reverie.git", rev = "d296065b477378cf17d503f1c5430ce235122f30", version = "0.1.0" }
+reverie-util = { git = "https://github.com/facebookexperimental/reverie.git", rev = "d296065b477378cf17d503f1c5430ce235122f30", version = "0.1.0" }
+clap = { version = "3.2.25", features = ["derive", "env", "regex", "unicode", "wrap_help"] }
